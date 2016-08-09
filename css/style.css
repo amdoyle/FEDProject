@@ -43,20 +43,15 @@ a:hover {
 }
 
 nav {
-  margin: 1vh 5vw;
-  padding-top: 1%;
-  height: 6vh;
-  width:50px;
-  box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
- /*position: fixed;*/
+  margin: 2vh 5vw;
+  padding-top: 1vh;
+  width: 50px;
 }
 
 #hamburger-nav {
   width: 100%;
   height: 25px;
-  top: -.25em;
+  /*top: -.25em;*/
   box-sizing: border-box;
   position: relative;
   content: "";
@@ -69,36 +64,36 @@ nav {
 }
 
 #hamburger-nav span {
-  width: 100%;
-  height: .25em;
-  top: .5em;
+  width: 35px;
+  height: 2px;
   position: absolute;
   display: block;
   content: "";
-  background-color: black;
+  background-color: #7f7f7f;
+  border-radius: 1px;
 }
 
 #hamburger-nav span:first-of-type {
-  top: 1em;
+  top: .5em;
 }
 
 #hamburger-nav span:last-of-type {
-  top: 1.5em;
+  top: 1em;
 }
 
 #nav-links {
-  background-color: pink;
+  background-color: rgba(0,0,0,0.91);
   width: 100vw;
   height: 100vh;
-  /*z-index: 10;*/
   margin-left: -1em;
+  margin-top: 3vh;
   overflow: hidden;
   position: relative;
+  text-transform: uppercase;
 }
 
 #nav-links li {
   font-size: 14px;
-  color: white;
   display: block;
   text-align: center;
   margin-top: 2em;
@@ -107,8 +102,17 @@ nav {
 
 #nav-links li a {
   font-size: 14px;
-  color: white;
+  color: #7f7f7f;
   display: block;
+  text-decoration: none;
+}
+
+#nav-links li a:hover {
+  color: #fff;
+}
+
+#nav-links li a:active {
+  color:  rgba(0,170,102,0.7);
 }
 
 #search {
@@ -117,9 +121,28 @@ nav {
 }
 
 #slider {
-  height: 310px;
-  /*background-color: blue;*/
-  /*z-index: 1;*/
+  height: 308px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#gallery li {
+  float:left;
+  margin: -3vh 0 0 -13vw;
+}
+
+#gallery ul {
+  margin: none;
+
+  /*width:10000%;
+  list-style:none;
+  margin-left:0px;*/
+}
+
+.slider-controls {
+  cursor: pointer;
 }
 
 article {
@@ -129,7 +152,6 @@ article {
 
 article h1 {
   text-align: center;
-  /*z-index: -5;*/
 }
 
 article section {
@@ -147,7 +169,8 @@ section:last-of-type {
 }
 
 section img {
-  width: 100%;
+  max-width: 353px;
+  min-height: 183px;
   margin: 0;
   padding: 0;
 }
@@ -160,74 +183,55 @@ footer{
   background:#000;
   color:#FFFFFF;
   text-align:center;
-  padding: 0 200px;
+  padding: 1vh 5vw;
 }
 
 footer p {
   font-size: 11px;
-  /*text-align:left;*/
   float: left;
+  padding: 1vh 0;
 }
 
 footer img {
   float: right;
+  padding: 1vh 0;
 }
 
 
-/* Your styles here ... */
-@media screen and (width: 10000px) {
-  body {
-    font-family: 'Open Sans', sans-serif;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-  }
-
-  .clearfix:after {
-      content:" ";
-      display:table;
-      clear:both;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size:41px;
-    font-weight:normal;
-  }
-
-  h2 {
-    font-size: 23px;
-  }
-
-  h4 {
-    font-size:13px;
-    font-weight:normal;
-  }
-
-  li {
-    display: inline-block;
-    text-align: left;
-  }
-
-  a {
-    color:#000;
-  }
-
-  a:hover {
-    color:
-  }
+@media screen and (min-width: 1000px) {
 
   nav {
-    margin: 0 200px;
+    margin: 0 18vw;
     padding-top: 1%;
     height: 60px;
+    width: 64vw;
     box-sizing: border-box;
       -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-   /*position: fixed;*/
+  }
+
+  #nav-links {
+    background-color: transparent;
+    width: 100vw;
+    height: 60px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #nav-links li {
+    margin-top: 0;
+    padding-top: 0;
+    float: left;
+  }
+
+  #nav-links li a {
+    color: black;
+    padding-right: .5em;
+  }
+
+  #hamburger-nav {
+    display: none;
   }
 
   #search {
@@ -238,18 +242,9 @@ footer img {
     display: inline;
   }
 
-  nav li {
-    font-size: 14px;
-    float: left;
-  }
-
-  #slider {
-    height: 310px;
-    background-color: blue;
-  }
-
   article {
-    margin: 0 200px;
+    width: 80vw;
+    margin: 10vw 0;
   }
 
   article h1 {
@@ -285,7 +280,7 @@ footer img {
     background:#000;
     color:#FFFFFF;
     text-align:center;
-    padding: 0 200px;
+    padding: 0 10px;
   }
 
   footer p {
@@ -299,3 +294,5 @@ footer img {
   }
 
 }
+
+/*#1460b6 - blue*/
