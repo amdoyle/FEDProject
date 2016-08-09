@@ -85,11 +85,13 @@ nav {
   background-color: rgba(0,0,0,0.91);
   width: 100vw;
   height: 100vh;
-  margin-left: -1em;
+  margin-left: -5vw;
+  padding: 2em;
   margin-top: 7vh;
   overflow: hidden;
   position: relative;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 #nav-links li {
@@ -120,9 +122,9 @@ nav {
   border: 1px solid #7f7f7f;
   border-radius: 12px;
   display: inline;
-  padding-bottom: 1%;
+  padding-bottom: 0;
   float: right;
-  margin: 2.5vh 5vw;
+  margin: 2.55vh 5vw;
 }
 
 #search span {
