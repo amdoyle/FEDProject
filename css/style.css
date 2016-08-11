@@ -347,18 +347,10 @@ footer img {
 }
 
 /*******************   Mobile - Landscape *****************/
-@media (min-resolution: 3dppx) {
+@media (orientation: landscape) {
 
   .slick-dots {
     bottom: 0em;
-  }
-
-  .slick-dots li button:before {
-    background-color: #7f7f7f;
-  }
-
-  .slick-dots li button {
-    border: 2px solid #7f7f7f;
   }
 
 }
@@ -379,13 +371,22 @@ footer img {
 
 @media screen and (min-resolution: 3dppx) {
 
-  #slider h1 {
-    top: 1em;
-  }
+    #slider h1 {
+      top: 1.25em;
+    }
 
-  .slick-dots {
-    bottom: 2em;
-  }
+    .slick-dots {
+      bottom: 0;
+    }
+
+    .slick-dots li button:before {
+      background-color: #7f7f7f;
+    }
+
+    .slick-dots li button {
+      border: 2px solid #7f7f7f;
+    }
+
 }
 
 /*******************     Tablet and Portrait *****************/
