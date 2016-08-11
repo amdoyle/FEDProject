@@ -371,6 +371,10 @@ footer img {
 
 @media screen and (min-resolution: 3dppx) {
 
+    #search form {
+      height: 25px;
+    }
+
     #slider h1 {
       top: 1.25em;
     }
