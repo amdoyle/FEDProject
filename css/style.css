@@ -1,8 +1,9 @@
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 100vw;
+  /*max-width: 1500px;*/
   overflow-x: hidden;
 }
 
@@ -51,9 +52,9 @@ a:active {
 /**********************     NAV      ***************************/
 
 #nav-content {
-  margin: 0 12vw;
   width: 90vw;
-  margin: 2vh 5vw;
+  max-width: 1500px;
+  margin: 2vh auto;
 }
 
 nav {
@@ -159,55 +160,95 @@ nav {
   outline: none;
 }
 
-
-
 /**********************     SLIDER      ***************************/
+
+/* .slick classes are over riding the default sytles imported from
+http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css the rest of the
+SLIDER styles are custom*/
+
 #slider {
-  /*height: auto;*/
-  width: 100vw;
   height: auto;
-  /*margin: 0;*/
-  padding: 0;
-  float: left;
-  overflow: hidden;
-  /*margin: -3vh 0 0 -13vw;*/
-  /*margin: none;*/
-  /*width:10000%;*/
-  /*list-style:none;*/
-  /*margin-left:0px;*/
-  display: relative;
-}
-
-#gallery img {
-  /*display: inline;*/
-  /*float: left;*/
   width: 100vw;
-  display: block;
+  max-width: 1500px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 }
 
-/*#gallery {
+#slider h1 {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  color: white;
+  padding: 0 5vw;
+  box-sizing: padding-box;
+  height: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
 
- /*float:left;
-  margin: -3vh 0 0 -13vw;
-  margin: none;
-  width:10000%;
-  list-style:none;
-  margin-left:0px;
-}*/
+#slider h3 {
+  display:none;
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 0;
+  max-width: 98vw;
+}
 
-/*#gallery_ul ul {
+.slick-dots {
+  width: 100%;
+  bottom: 3rem;
+  position: relative;
+}
+
+.slick-active {
+  background-color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  content: " ";
+  opacity: 0;
+  border-radius: 50%;
+  width:20px;
+  height:20px;
+}
+
+.slick-dots li button:before {
+  content: " ";
+  background-color:white;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.slick-dots li button {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.slick-dotted, .slick-slider {
   margin: 0;
   padding: 0;
-}*/
-/*
-.slider-controls {
-  cursor: pointer;
-}*/
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-slide img {
+  height: auto;
+  top:0;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
+}
 
 /**********************     MAIN CONTENT      ***************************/
 article {
   width: 80vw;
-  margin: 10vw;
+  margin: 5% 10vw 10%;
   display: block;
   display: relative;
 }
@@ -222,6 +263,7 @@ the slider and break the layout!*/
 
 article h1 {
   text-align: center;
+  font-size: 38px;
 }
 
 article section {
@@ -238,6 +280,13 @@ section:last-of-type {
   padding-right: 0;
 }
 
+section h2 {
+  font-size: 23px;
+  height: 50px;
+  line-height: 1.1em;
+  margin: 4%;
+}
+
 section img {
   max-width: 353px;
   min-height: 183px;
@@ -250,28 +299,136 @@ section a {
 }
 
 /**********************     FOOTER      ***************************/
+.container-wrapper {
+  min-height: 100vh;
+  margin-bottom: -30px;
+}
 
-footer{
+footer {
+  height: 40px;
   background:#000;
   color:#FFFFFF;
   text-align:center;
-  padding: 1vh 5vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 5%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  box-sizing: padding-box;
 }
 
 footer p {
   font-size: 11px;
   float: left;
-  padding: 1vh 0;
+  padding-top: 4%;
 }
 
 footer img {
   float: right;
-  padding: 1vh 0;
+  padding-top: 2%;
 }
 
+@media (orientation: landscape) {
 
-/**********************     TABLET      ***************************/
-@media screen and (min-width: 1200px) {
+  footer {
+    height: 50px;
+  }
+
+}
+
+/*******************     Larger Mobile - including subhead on Slider  *****************/
+@media screen and (min-width: 550px) {
+
+  #slider h3{
+    display:block;
+    font-size: 1em;
+    top: 4em;
+  }
+
+}
+@media screen and (min-resolution: 3dppx) {
+
+  #slider h1 {
+    top: 1em;
+  }
+
+  .slick-dots {
+    bottom: 2em;
+  }
+}
+
+/*******************     Tabelt - including subhead on Slider  *****************/
+@media screen and (min-width: 700px)  and (orientation:  portrait) {
+
+  #slider h1 {
+    top: 3rem;
+    font-size: 2em;
+  }
+
+  #slider h3 {
+    top: 4em;
+    font-size: 1.5em;
+  }
+
+  .slick-dots{
+    bottom: 5rem;
+  }
+
+
+  .slick-dots{
+    bottom: 3rem;
+  }
+
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+
+  #slider h1 {
+    top: 2em;
+  }
+
+  #slider h3 {
+    top: 4.5em;
+    font-size: 1.2em;
+  }
+
+  .slick-dots{
+    bottom: 3.5em;
+  }
+
+  article {
+    margin-top: 5%;
+  }
+
+  footer p {
+    padding-top: 3%;
+  }
+
+  footer img {
+    padding-top: 1.5%;
+  }
+
+}
+
+@media (min-width: 999px) {
+
+ #slider h1 {
+   font-size: 3em;
+   top: 1em;
+ }
+
+  #slider h3 {
+    top: 4.5em;
+    font-size: 1.75em;
+  }
+
+ .slick-dots {
+   bottom: 4em;
+ }
+}
+
+/**********************           ***************************/
+@media screen and (min-width: 1199px) {
 
   #nav-content {
     margin: 0 12vw;
@@ -340,18 +497,18 @@ footer img {
     padding: 0;
   }
 
-  .slides {
-    width: 100vw;
-    height: 30vh;
+  #slider h3 {
+    top: 4em;
   }
 
   article {
     width: 76vw;
-    margin: 0 12vw;
+    margin: 2vh 12vw;
   }
 
   article h1 {
     text-align: center;
+    margin: 2vh 0;
   }
 
   article section {
@@ -384,20 +541,47 @@ footer img {
     font-size: 14px;
   }
 
-  footer{
-    background:#000;
-    color:#FFFFFF;
-    text-align:center;
-    padding: 0 12vw;
-  }
-
   footer p {
-    font-size: 11px;
-    float: left;
+    padding-top: 2%;
   }
 
   footer img {
-    float: right;
+    padding-top: 1%;
+  }
+
+}
+
+@media screen and (min-width: 1500px){
+
+  #nav-content{
+    margin: 0 auto;
+  }
+
+
+  .slider-container {
+    width: 100vw;
+    float: left;
+    height: 308px;
+    background-color: rgba(0,0,0, .85);
+  }
+
+  article{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin: 0;
+    margin-top: 2%;
+    padding: 0 21%;
+  }
+
+  footer p {
+    padding-top: 1%;
+  }
+
+  footer img {
+    padding-top: .75%;
   }
 
 }

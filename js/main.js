@@ -27,43 +27,18 @@ function showNav(){
 
 $("#slider").slick({
         dots: true,
+        mobileFirst: true,
         pauseOnDotsHover: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        zIndex: 0,
+        swipe: true,
+        respondTo: 'window'
     });
-//
-//   // normal options...
-//   infinite: false,
-//
-//   // the magic
-//   responsive: [{
-//
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         infinite: true
-//       }
-//
-//     },
-//      {
-//
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 1,
-//         dots: true
-//       }
-//
-//     },
-//      {
-//
-//       breakpoint: 300,
-//       settings: "unslick" // destroys slick
-//
-//     }]
-// });
+
 
 });
