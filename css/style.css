@@ -1,27 +1,15 @@
-
-#searchButton {
-    width: 0;
-    /* outline: none; */
-    height: 0;
-    hidden: hidden;
-    position: absolute;
-    top: 0;
-    right: -50px;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0 auto;
   width: 100vw;
-  /*max-width: 1500px;*/
   overflow-x: hidden;
 }
 
 .clearfix:after {
-    content:" ";
-    display:table;
-    clear:both;
+  content:" ";
+  display:table;
+  clear:both;
 }
 
 p {
@@ -80,7 +68,7 @@ nav {
   position: relative;
   content: "";
   float: left;
-  margin: 1vh 0;
+  margin: .5vh 0 1vh 0;
 }
 
 #hamburger-nav p {
@@ -156,13 +144,13 @@ nav {
 }
 
 #search svg {
-  width: 10px;
+  width: 12px;
   padding: 0;
 }
 
 #search input[type="search"] {
   width: 75%;
-  font-size: 13px;
+  font-size: 11px;
   margin: -2% 0;
   border: none;
   outline: none;
@@ -173,9 +161,8 @@ nav {
 }
 
 /**********************     SLIDER      ***************************/
-
 /* .slick classes are over riding the default sytles imported from
-http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css the rest of the
+//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css the rest of the
 SLIDER styles are custom*/
 
 #slider {
@@ -339,7 +326,7 @@ footer img {
   float: right;
   padding-top: 2%;
 }
-
+/*******************   Mobile - Landscape *****************/
 @media (orientation: landscape) {
 
   footer {
@@ -358,6 +345,9 @@ footer img {
   }
 
 }
+
+/*******************     Larger Mobile - DPR:3 Phones  *****************/
+
 @media screen and (min-resolution: 3dppx) {
 
   #slider h1 {
@@ -369,7 +359,7 @@ footer img {
   }
 }
 
-/*******************     Tabelt - including subhead on Slider  *****************/
+/*******************     Tablet and Portrait *****************/
 @media screen and (min-width: 700px)  and (orientation:  portrait) {
 
   #slider h1 {
@@ -392,6 +382,8 @@ footer img {
   }
 
 }
+
+/*******************     Tablet and Landscape *****************/
 
 @media (min-width: 700px) and (orientation: landscape) {
 
@@ -422,6 +414,8 @@ footer img {
 
 }
 
+/*******************     Screen size greater than 999px  *****************/
+
 @media (min-width: 999px) {
 
  #slider h1 {
@@ -439,7 +433,7 @@ footer img {
  }
 }
 
-/**********************           ***************************/
+/**********************       Desktop - also were we see the 3 column view    ***************************/
 @media screen and (min-width: 1199px) {
 
   #nav-content {
@@ -562,6 +556,8 @@ footer img {
   }
 
 }
+
+/*******************     Laptops  and Desktops   *****************/
 
 @media screen and (min-width: 1500px){
 
