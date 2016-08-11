@@ -348,19 +348,6 @@ footer img {
 }
 
 
-/*******************     Larger Mobile - including subhead on Slider  *****************/
-@media screen and (min-width: 550px) {
-
-  #slider h3{
-    display:block;
-    font-size: 1em;
-    top: 4em;
-  }
-
-}
-
-/*******************     Larger Mobile - DPR:3 Phones  *****************/
-
 @media screen and (min-resolution: 3dppx) {
 
     #search form {
@@ -385,6 +372,36 @@ footer img {
 
 }
 
+@media screen and (min-width: 414px) and (min-resolution: 3dppx) {
+    #slider h1 {
+      top: 1.75em;
+    }
+}
+
+/*******************     Larger Mobile - including subhead on Slider  *****************/
+@media screen and (min-width: 550px) {
+
+  #slider h3{
+    display:block;
+    font-size: 1em;
+    top: 4em;
+  }
+
+}
+
+/*******************     Larger Mobile - DPR:3 Phones  *****************/
+
+@media screen and (min-width: 550px) and (min-resolution: 3dppx) {
+
+  .slick-dots li button:before {
+    background-color: #fff;
+  }
+
+  .slick-dots li button {
+    border: 2px solid #fff;
+  }
+
+}
 /*******************     Tablet and Portrait *****************/
 @media screen and (min-width: 700px)  and (orientation:  portrait) {
 
