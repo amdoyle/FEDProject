@@ -131,6 +131,7 @@ nav {
 
 #search form {
   width: 10em;
+  height: 25px;
   text-align: center;
   border: 1px solid #7f7f7f;
   border-radius: 12px;
