@@ -346,15 +346,6 @@ footer img {
 
 }
 
-/*******************   Mobile - Landscape *****************/
-@media (orientation: landscape) {
-
-  .slick-dots {
-    bottom: 0em;
-  }
-
-}
-
 
 /*******************     Larger Mobile - including subhead on Slider  *****************/
 @media screen and (min-width: 550px) {
