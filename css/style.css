@@ -149,6 +149,10 @@ nav {
   padding: 0;
 }
 
+#search input {
+  height: 22px;
+}
+
 #search input[type="search"] {
   width: 75%;
   font-size: 11px;
@@ -156,7 +160,7 @@ nav {
   border: none;
   outline: none;
 }
-#search input[type="text"]:focus {
+#search input[type="search"]:focus {
   outline: none;
   font-size: 12px;
 }
@@ -219,13 +223,13 @@ SLIDER styles are custom*/
 
 .slick-dots li button:before {
   content: " ";
-  background-color:white;
+  background-color: #fff;
   opacity: 1;
   border-radius: 50%;
 }
 
 .slick-dots li button {
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 
@@ -332,6 +336,7 @@ footer img {
   float: right;
   padding-top: 2%;
 }
+
 /*******************   Mobile - Landscape *****************/
 @media (orientation: landscape) {
 
@@ -340,6 +345,24 @@ footer img {
   }
 
 }
+
+/*******************   Mobile - Landscape *****************/
+@media (min-resolution: 3dppx) {
+
+  .slick-dots {
+    bottom: 0em;
+  }
+
+  .slick-dots li button:before {
+    background-color: #7f7f7f;
+  }
+
+  .slick-dots li button {
+    border: 2px solid #7f7f7f;
+  }
+
+}
+
 
 /*******************     Larger Mobile - including subhead on Slider  *****************/
 @media screen and (min-width: 550px) {
