@@ -1,3 +1,14 @@
+
+#searchButton {
+    width: 0;
+    /* outline: none; */
+    height: 0;
+    hidden: hidden;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -149,7 +160,7 @@ nav {
   padding: 0;
 }
 
-#search input[type="text"] {
+#search input[type="search"] {
   width: 75%;
   font-size: 13px;
   margin: -2% 0;
@@ -158,6 +169,7 @@ nav {
 }
 #search input[type="text"]:focus {
   outline: none;
+  font-size: 12px;
 }
 
 /**********************     SLIDER      ***************************/

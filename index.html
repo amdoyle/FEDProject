@@ -9,8 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='css/reset.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <!-- <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/> -->
-  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
   <link href='css/style.css' rel='stylesheet' type='text/css'>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -40,14 +39,15 @@
       </nav>
       <div id="search">
         <!-- search button and feild here -->
-        <form method="GET" action="">
+        <form id="searchForm" method="GET">
           <svg xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 15 15.25"><g fill="none" stroke="#676767"
           stroke-width="1.5" stroke-miterlimit="10">
           <circle cx="5.348" cy="5.662" r="4.181"/>
           <path d="M8.345 8.66l5.433 5.433"/></g>
         </svg>
-        <input type="text" placeholder="Search everywhere">
+
+        <input type="search" placeholder="Search everywhere" id="searchField">
       </form>
     </div>
   </div>
@@ -74,8 +74,8 @@
         <!-- </div> -->
       </div>
       <div>
-        <h1>Headline for Slide Two Might Be Longer</h1>
-        <h3>The subhead could also be very long and require multiple lines of text. Maybe something like.</h3>
+        <h1>Headline for Slide Two</h1>
+        <h3>Subhead for slide 2. This subhead longer to highlight what this would look like with longer copy.</h3>
         <img srcset="images/banner-320.png 320w, images/banner-640.png 640w,
         images/banner-568.png 568w, images/banner-640.png 640w, images/banner-736.png 736w,
         images/banner-1136.png 1136w, images/banner.jpg"
@@ -90,7 +90,7 @@
       </div>
       <div>
         <h1>Headline for Slide Three</h1>
-        <h3>Share, connect and collaborate.</h3>
+        <h3>Subhead for slide 3.</h3>
         <img srcset="images/banner-320.png 320w, images/banner-640.png 640w,
         images/banner-568.png 568w, images/banner-640.png 640w, images/banner-736.png 736w,
         images/banner-1136.png 1136w, images/banner.jpg"
