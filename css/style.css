@@ -145,6 +145,11 @@ nav {
   padding: 0;
 }
 
+.svg-div {
+    float: left;
+    padding: 1.5% 0 0 6%;
+}
+
 #search svg {
   width: 12px;
   padding: 0;
