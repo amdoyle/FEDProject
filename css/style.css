@@ -179,9 +179,10 @@ SLIDER styles are custom*/
   text-align: center;
   position: relative;
   top: 2rem;
-  color: white;
+  color: #fff;
   padding: 0 5vw;
   box-sizing: padding-box;
+  font-weight: 300;
   height: 0;
   font-size: 1.5em;
   line-height: 1.25em;
@@ -190,7 +191,8 @@ SLIDER styles are custom*/
 #slider h3 {
   display:none;
   position: relative;
-  color: white;
+  color: #fff;
+  font-weight: 700;
   text-align: center;
   height: 0;
   max-width: 98vw;
@@ -282,6 +284,7 @@ section:last-of-type {
 section h2 {
   font-size: 23px;
   height: 50px;
+  font-weight: 700;
   line-height: 1.1em;
   margin: 4%;
 }
@@ -319,6 +322,7 @@ footer {
 footer p {
   font-size: 11px;
   float: left;
+  font-weight: 300;
   padding-top: 4%;
 }
 
