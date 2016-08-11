@@ -137,6 +137,7 @@ nav {
   display: inline;
   padding-bottom: 0;
   float: right;
+  font-family: 'Open sans', sans-serif;
 }
 
 #search span {
