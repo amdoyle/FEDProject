@@ -398,6 +398,7 @@ footer img {
 @media screen and (min-width: 550px) {
 
   #slider h3{
+    top: 4em;
     display:block;
     font-size: 1em;
   }
