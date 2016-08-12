@@ -68,7 +68,7 @@ nav {
   position: relative;
   content: "";
   float: left;
-  margin: .5vh 0 1vh 0;
+  margin: 15% 0 1vh 0;
 }
 
 #hamburger-nav p {
@@ -137,6 +137,8 @@ nav {
   border-radius: 12px;
   display: inline;
   padding-bottom: 0;
+  margin-bottom: 2%;
+  margin-top: 1%;
   float: right;
   font-family: 'Open sans', sans-serif;
 }
@@ -162,7 +164,7 @@ nav {
 #search input[type="search"] {
   width: 75%;
   font-size: 11px;
-  margin: -2% 0;
+  margin: 0;
   border: none;
   outline: none;
 }
@@ -189,7 +191,7 @@ SLIDER styles are custom*/
 #slider h1 {
   text-align: center;
   position: relative;
-  top: 2rem;
+  top: 1em;
   color: #fff;
   padding: 0 5vw;
   box-sizing: padding-box;
@@ -211,7 +213,7 @@ SLIDER styles are custom*/
 
 .slick-dots {
   width: 100%;
-  bottom: 3rem;
+  bottom: 3em;
   position: relative;
 }
 
