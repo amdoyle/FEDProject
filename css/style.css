@@ -400,7 +400,7 @@ footer img {
   #slider h3{
     display:block;
     font-size: 1em;
-    top: 4em;
+    /*top: 4em;*/
   }
 
 }
@@ -507,7 +507,7 @@ footer img {
 /*******************     Screen size greater than 999px  *****************/
 
 @media (min-width: 999px) {
-/*
+
  #slider h1 {
    font-size: 3em;
    top: 1em;
@@ -516,7 +516,7 @@ footer img {
   #slider h3 {
     top: 4.5em;
     font-size: 1.75em;
-  }*/
+  }
 }
 
 
