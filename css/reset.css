@@ -20,7 +20,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: $content-font-family;
   line-height: 1.4em;
   font-size: 1em;
 	vertical-align: baseline;
@@ -47,11 +46,4 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-a {
-  color: $brand-color;
-  & a:hover {
-    color: $secondary-color-dark;
-  }
 }
