@@ -197,7 +197,7 @@ SLIDER styles are custom*/
   box-sizing: padding-box;
   font-weight: 300;
   height: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 
@@ -448,7 +448,7 @@ footer img {
   }
 
   #slider h3 {
-    /*top: 3em;*/
+    top: 3em;
     font-size: 1.5em;
   }
 
