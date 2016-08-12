@@ -191,7 +191,7 @@ SLIDER styles are custom*/
 #slider h1 {
   text-align: center;
   position: relative;
-  /*top: 2em;*/
+  top: 1em;
   color: #fff;
   padding: 0 5vw;
   box-sizing: padding-box;
@@ -352,9 +352,9 @@ footer img {
 /*******************   Mobile - Landscape *****************/
 @media (min-resolution: 2dppx) {
 
-  /*#slider h1 {
+  #slider h1 {
     top: .5em;
-  }*/
+  }
 
 }
 
@@ -409,11 +409,11 @@ footer img {
 
   /*#slider h1 {
     top: .5em;
-  }
+  }*/
 
   #slider h3{
-    top: 5em;
-  }*/
+    top: 4em;
+  }
 
   .slick-dots {
     bottom: 2em;
