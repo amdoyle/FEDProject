@@ -24,7 +24,7 @@
       mobileFirst: true,
       pauseOnDotsHover: true,
       arrows: false,
-      autoplay: false,
+      autoplay: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
